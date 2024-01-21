@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  dbt:
+    build: .
+    environment:
+      # Snowflakeの認証情報
+      SNOWFLAKE_ACCOUNT: your_snowflake_account
+      SNOWFLAKE_USER: your_snowflake_user
+      SNOWFLAKE_PASSWORD: your_snowflake_password
+      # BigQueryの認証情報
+      BIGQUERY_PROJECT_ID: your_bigquery_project_id
+      BIGQUERY_PRIVATE_KEY_ID: your_bigquery_private_key_id
+      # PostgreSQLの認証情報
+      POSTGRES_HOST: your_postgres_host
+      POSTGRES_DB: your_postgres_db
+      POSTGRES_USER: your_postgres_user
+      POSTGRES_PASSWORD: your_postgres_password
+     
+    volumes:
+      - .:/app
+
