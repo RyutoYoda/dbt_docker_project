@@ -1,4 +1,4 @@
 # dbt_docker_project
 
-dbtプロジェクト用リポジトリ
+dbt初期プロジェクト用リポジトリ
 ※Snowflake及びBigQueryのクライアント情報は入れないこと
